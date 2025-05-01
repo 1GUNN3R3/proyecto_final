@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Datos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/imss.jpg" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <h1>Realizar Consulta</h1>
+        <select id="query">
+            <option value="">Seleccione una opción</option>
+            <option value="clientes">Clientes</option>
+            <option value="departamentos">Departamentos</option>
+            <option value="doctores">Doctores</option>
+            <option value="facturas">Facturas</option>
+            <option value="habitaciones">Habitaciones</option>
+            <option value="medicamentos">Medicamentos</option>
+            <option value="pacientes">Pacientes</option>
+            <option value="producto">Producto</option>
+            <option value="secretaria">Secretaria</option>
+            <option value="tratamientos">Tratamientos</option>
+        </select>
+        <button onclick="realizarConsulta()">Consultar</button>
+        <div id="resultado"></div>
+        <table id="tablaResultados">
+            <thead id="encabezados">
+               
+            </thead>
+            <tbody id="datos">
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
